@@ -8,6 +8,9 @@ module.exports = {
     filename: 'app.js'
   },
   devtool: 'source-map',
+  resolveLoader: {
+    modules: ['node_modules', resolve(__dirname, 'loaders')]
+  },
   module: {
     rules: [
       {
